@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.header__link {
+    color: #fff;
+    border-radius: 7px;
+    border: 2px solid #fff; 
+    padding: 8px 18px;
+    box-shadow: 0 0 7px #ffffff50;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        color: #36af77;
+        border-color: #36af77;
+        box-shadow: 0 0 0 #36af77;
+    }
+}
+
+.header__link_active {
+    color: #36af77;
+    border-color: #36af77;
+    box-shadow: 0 0 4px #36af77;
+}
+
