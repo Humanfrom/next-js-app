@@ -7,12 +7,13 @@ const Home: FC<IItemData> = ({ items }) => {
   return (
     <div>
       <h1>Welcome to homepage!</h1>
-
-      {items?.length ? (
-        items.map((item) => <SimpleItem key={item.id} item={item} />)
-      ) : (
-        <div>Items not found!</div>
-      )}
+      <div className="flex">
+        {items?.length ? (
+          items.map((item) => <SimpleItem key={item.id} item={item} />)
+        ) : (
+          <div>Items not found!</div>
+        )}
+      </div>
     </div>
   );
 };

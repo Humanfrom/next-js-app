@@ -24,3 +24,6 @@ const Header: FC = () => {
 };
 
 export default Header;
+
+
+//className="border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-200 lg:p-0"

@@ -15,7 +15,7 @@ const SimpleItem: FC<IItemDataSingle> = ({ item }) => {
       />
       <h2>{item.title}</h2>
       <small>{item.description}</small>
-
+      <br/>
       <Link href={`/item/${item.id}`}>Read more</Link>
     </div>
   );

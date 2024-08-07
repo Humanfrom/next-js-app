@@ -1,12 +1,17 @@
-import { NextPage } from "next";
+import Home from "@/components/screens/home/Home";
+import { IItemData } from "@/interfaces/item.interface";
+import { ItemService } from "@/services/item.service";
+import { GetServerSideProps, NextPage } from "next";
 
-const HomePage: NextPage = () => {
+export const revalidate = 3600;
+
+const HomePage: NextPage = async () => {
+  const items = await ItemService.getAll();
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        
-      </div>
-    </main>
+    <>
+      <Home items={items} />
+    </>
   );
 };
 
